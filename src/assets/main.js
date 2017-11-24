@@ -9,7 +9,7 @@ $(function() {
       var completedCourses= response.courses.completed;
       for (var i = 0; i<completedCourses.length; i++){
         console.log(completedCourses[i]);
-        var div = $('<div></div>').appendTo('#badges').addClass('.course');
+        var div = $('<div></div>').appendTo('#badges').addClass('course');
           $('<h3>'+completedCourses[i].title+'</h3>').appendTo(div);
           $('<img></img>').appendTo(div).attr('src',completedCourses[i].badge);
           $('<a></a>').appendTo(div).attr({
